@@ -1,0 +1,12 @@
+
+<div class="section container">
+	<div class="controlpane text-center">
+	<br>
+		<button class="draft-checkin btn btn-default" ng-click="sendRequest($event)" title="checkin">checkin</button>
+		<button ng-click="sendRequest($event)" class="change-save btn btn-success" title="save">save</button>
+		<button class="change-discard btn btn-warning" ng-click="sendRequest($event)" title="discard">discard</button>
+		<button class="decide-accept btn btn-info" title="accept" ng-click="sendRequest($event)">accept</button>
+		<button class="decide-decline btn btn-danger" title="decline" ng-click="sendRequest($event)">decline</button>
+	</div>
+	<div class="content" contenteditable="true" ng-focus="editStart($event)" ng-blur="editComplete($event)" ng-bind-html="redlinedata.html"></div>
+</div>
